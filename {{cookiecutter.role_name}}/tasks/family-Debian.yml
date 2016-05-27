@@ -1,0 +1,4 @@
+---
+# {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/family-Debian.yml
+
+- debug: msg="Included family-Debian.yml"

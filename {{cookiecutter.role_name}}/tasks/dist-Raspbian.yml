@@ -1,0 +1,4 @@
+---
+# {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/dist-Raspbian.yml
+
+- debug: msg="Included dist-Raspbian.yml"

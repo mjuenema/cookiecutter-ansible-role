@@ -1,0 +1,4 @@
+---
+# {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/dist-Solaris.yml
+
+- debug: msg="Included dist-Solaris.yml"

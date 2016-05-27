@@ -1,0 +1,4 @@
+---
+# {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/dist-Gentoo.yml
+
+- debug: msg="Included dist-Gentoo.yml"

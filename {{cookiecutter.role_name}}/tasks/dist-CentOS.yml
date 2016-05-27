@@ -1,0 +1,4 @@
+---
+# {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/dist-CentOS.yml
+
+- debug: msg="Included dist-CentOS.yml"
