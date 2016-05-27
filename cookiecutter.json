@@ -2,12 +2,5 @@
   "full_name": "Markus Juenemann",
   "email": "markus@juenemann.net",
   "role_name": "ROLENAME",
-  "github_user": "mjuenema",
-  "repo_name": "ansible-role-",
-  "short_description": "DESCRIPTION",
-  "release_date": "2016-05-27",
-  "year": "2016",
-  "version": "0.1.0",
-  "min_ansible_version": "1.6",
-  "allow_duplicates": "no"
+  "short_description": "DESCRIPTION"
 }
