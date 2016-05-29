@@ -1,9 +1,14 @@
 ---
 # {{cookiecutter.github_user}}{{cookiecutter.role_name}}/tasks/main.yml
+#
+- name: "Create a random UUID which can be used in other tasks"
+  set_fact: random_uuid="{{ ansible_date_time.iso8601_micro | to_uuid }}"
+
+- name: "Show random UUID"                                                                           
+  debug: msg="{{ random_uuid }}"
 
 # Determine which distribution specific variable files exists and include them/
 #
-
 - name: "Check whether variables for OS family exists"
   stat: path="{{ '{{' }} role_path {{ '}}' }}/vars/{{ '{{' }} ansible_os_family {{ '}}' }}.yml"
   register: file_osfamily_vars
@@ -62,6 +67,6 @@
   delegate_to: 127.0.0.1
 
 - name: "Include tasks for distribution/version"
-  include: "{{ '{{' }} ansible_distribution {{ '}}{{' }}ansible_distribution_major_version{{ '}}' }}.yml"
+  gnclude: "{{ '{{' }} ansible_distribution {{ '}}{{' }}ansible_distribution_major_version{{ '}}' }}.yml"
   when: file_dist_version_tasks.stat.exists is defined and file_dist_version_tasks.stat.exists
 
