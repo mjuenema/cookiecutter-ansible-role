@@ -1,2 +1,77 @@
 ---
 # {{cookiecutter.github_user}}{{cookiecutter.role_name}}/handlers/main.yml
+
+- name: Restart atd
+  service: name=atd state=restarted
+
+- name: Restart chronyd
+  service: name=chronyd state=restarted
+
+- name: Restart crond
+  service: name=crond state=restarted
+
+- name: Restart firewalld
+  service: name=firewalld state=restarted
+
+- name: Restart rsyslog
+  service: name=rsyslog state=restarted
+
+- name: Restart smartd
+  service: name=smartd state=restarted
+
+- name: Restart sshd
+  service: name=sshd state=restarted
+
+- name: Restart sysstat
+  service: name=sysstat state=restarted
+
+- name: Restart ip6tables
+  service: name=ip6tables state=restarted
+
+- name: Restart iptables
+  service: name=iptables state=restarted
+
+- name: Restart libvirt-guests
+  service: name=libvirt-guests state=restarted
+
+- name: Restart lvm2-monitor
+  service: name=lvm2-monitor state=restarted
+
+- name: Restart messagebus
+  service: name=messagebus state=restarted
+
+- name: Restart netconsole
+  service: name=netconsole state=restarted
+
+- name: Restart netfs
+  service: name=netfs state=restarted
+
+- name: Restart ntpd
+  service: name=ntpd state=restarted
+
+- name: Restart ntpdate
+  service: name=ntpdate state=restarted
+
+- name: Restart oidentd
+  service: name=oidentd state=restarted
+
+- name: Restart postfix
+  service: name=postfix state=restarted
+
+- name: Restart snmpd
+  service: name=snmpd state=restarted
+
+- name: Restart snmptrapd
+  service: name=snmptrapd state=restarted
+
+- name: Restart sssd
+  service: name=ssd state=restarted
+
+- name: Restart supervisord
+  service: name=supervisord state=restarted
+
+- name: Restart svnserve
+  service: name=svnserve state=restarted
+
+
+
