@@ -14,13 +14,31 @@ A description of the settable variables for this role should go here, including 
 
 A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
 
-## Example Playbook
+## Example
+
+First install the role into your Ansible configuration.
+
+    cd roles/
+    ansible-galaxy install {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
+    
+Alternatively one can clone the Github repository directly.
+
+   cd roles/
+   git clone https::/github.com/{{cookiecutter.github_user}}/ansible-role-{{cookiecutter.role_name}}.git {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
+   cd {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
+   git checkout ...
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
          - { role: {{cookiecutter.github_user}}.{{cookiecutter.role_name}} }
+
+## Testing
+
+The ```tests/``` directory contains a simple playbook for testing this role.
+
+    ansible-playbook --check -i {{cookiecutter.github_user}}.{{cookiecutter.role_name}}/tests/inventory {{cookiecutter.github_user}}.{{cookiecutter.role_name}}/tests/test.yml
 
 ## Status
 
