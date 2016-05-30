@@ -23,10 +23,10 @@ First install the role into your Ansible configuration.
     
 Alternatively one can clone the Github repository directly.
 
-   cd roles/
-   git clone https::/github.com/{{cookiecutter.github_user}}/ansible-role-{{cookiecutter.role_name}}.git {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
-   cd {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
-   git checkout ...
+    cd roles/
+    git clone https::/github.com/{{cookiecutter.github_user}}/ansible-role-{{cookiecutter.role_name}}.git {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
+    cd {{cookiecutter.github_user}}.{{cookiecutter.role_name}}
+    git checkout ...
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
